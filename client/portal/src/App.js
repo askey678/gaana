@@ -11,7 +11,7 @@ function App() {
  <div>
   <BrowserRouter>
 
-  <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-none p-3 mb-5 bg-body-tertiary rounded">
   <h1 className="navbar-brand, text-danger">Gaana &nbsp;</h1>
   <div className="collapse navbar-collapse" id="navbarNav">
     <ul className="navbar-nav">

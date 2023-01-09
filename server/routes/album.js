@@ -6,7 +6,7 @@ const multer = require('multer')
 const upload = multer({dest:'uploads/'})
 
 router.get('/', (request, response) => {
-    const query =   `select album.*, artist.firstname as Firstname, artist.lastname as Lastname from album, artist where album.artistId=artist.id `
+    const query = `select album.*, artist.firstname as Firstname, artist.lastname as Lastname from album, artist where album.artistId=artist.id `
     
     db.query(query, (error, albums) =>{
         response.send(utils.createResult(error, albums))
